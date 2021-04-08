@@ -11,7 +11,6 @@ def home(request):
         ############ Get Items From Database and store in a variable ##################
         item=Product.objects.all()
         message='Welcome'
-
         ######### Return the value on the page home #########
         return render(request,'home.html',{'item':item,'message':message})
     else:
@@ -151,40 +150,43 @@ def navigation(request):
 
 ############## Manage Item adding in cart ################
 def Add_Item(request):
-    if request.session['userid']:
-        pid = request.POST['it']
-        uid=request.session.get('userid')
-        bb=cc=dd=ee=ff=gg=""
-        pob=Product.objects.all().filter(Item_id=pid)
-        for a in pob:
-            bb=a.Item_name
-        b=bb
-        for a in pob:
-            cc=a.Price
-        c=cc
-        for a in pob:
-            dd=a.Quantity
-        d=dd
-        for a in pob:
-            ee=a.Descriptions
-        e=ee
-        for a in pob:
-            ff=a.Sellars_Name
-        f=ff
-        for a in pob:
-            gg=a.Item_Image
-        g=gg
-        dat=datetime.datetime.now().strftime('%d/%m/%Y')
-        if Cart.objects.filter(Product_id=pid).exists():
-            message='Item already added in cart'
+    try:
+        if request.session['userid']:
+            pid = request.POST['it']
+            uid=request.session.get('userid')
+            bb=cc=dd=ee=ff=gg=""
+            pob=Product.objects.all().filter(Item_id=pid)
+            for a in pob:
+                bb=a.Item_name
+            b=bb
+            for a in pob:
+                cc=a.Price
+            c=cc
+            for a in pob:
+                dd=a.Quantity
+            d=dd
+            for a in pob:
+                ee=a.Descriptions
+            e=ee
+            for a in pob:
+                ff=a.Sellars_Name
+            f=ff
+            for a in pob:
+                gg=a.Item_Image
+            g=gg
+            dat=datetime.datetime.now().strftime('%d/%m/%Y')
+            if Cart.objects.filter(Product_id=pid).exists():
+                message='Item already added in cart'
+            else:
+                ca=Cart(User_id=uid, Product_id=pid, Product_Name=b, Product_Price=c, Product_Quantity=d, Product_Details=e, Product_Add_Date=dat , Product_Seller=f, Product_image=g)
+                ca.save()
+                message='Item added Sucessfully'
+            return redirect('home.html',{'message':message})
+            #return render(request,'home.html',{'message': 'Item added'})
         else:
-            ca=Cart(User_id=uid, Product_id=pid, Product_Name=b, Product_Price=c, Product_Quantity=d, Product_Details=e, Product_Add_Date=dat , Product_Seller=f, Product_image=g)
-            ca.save()
-            message='Item added Sucessfully'
-        return redirect('home.html',{'message':message})
-        #return render(request,'home.html',{'message': 'Item added'})
-    else:
-         return render(request,'login.html')
+             return render(request,'login.html')
+    except:
+        return render(request, 'login.html')
 
 
 ############### Delete Items from Cart ###################

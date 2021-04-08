@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" href="{% static 'Images/favico.png' %}" type="image/gif" sizes="16x16">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<!--    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">-->
+<!-- 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+<!--	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">-->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!--    External css-->
-     <link href="static/css/bootstrap.css" rel='stylesheet' type='text/css' /><!-- bootstrap css -->
-    <link href="static/css/style.css" rel='stylesheet' type='text/css' /><!-- custom css -->
-    <link href="static/css/font-awesome.min.css" rel="stylesheet"><!-- fontawesome css -->
+    <!--    External css for hover on developer photos effect-->
+<!--     <link href="static/css/bootstrap.css" rel='stylesheet' type='text/css' />&lt;!&ndash; bootstrap css &ndash;&gt;-->
+<!--    <link href="static/css/style.css" rel='stylesheet' type='text/css' />&lt;!&ndash; custom css &ndash;&gt;-->
+<!--    <link href="static/css/font-awesome.min.css" rel="stylesheet">&lt;!&ndash; fontawesome css &ndash;&gt;-->
 
     <link rel="stylesheet" type="text/css" href="{% static 'css/nav.css' %}">
-      <!--<link rel="stylesheet" type="text/css" href="{% static 'css/ext.css' %}">-->
+<!--      <link rel="stylesheet" type="text/css" href="{% static 'css/ext.css' %}">-->
 
     <!-- google fonts -->
 	<link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
@@ -36,81 +36,94 @@
 <body class="bd-gradient-primary">
 {% load static %}
 
-<!--  &lt;!&ndash;NavBar&ndash;&gt;-->
-<!--<div class="sticky-top">-->
-<!--   <nav class="navbar navbar-expand-lg navbar-light bg-light">-->
-<!--  <a class="navbar-brand" href="index">Ewebgo About</a>-->
-<!--  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
-<!--    <span class="navbar-toggler-icon"></span>-->
-<!--  </button>-->
+  <!--NavBar-->
+<div class="sticky-top">
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="index">Ewebgo About</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-<!--  <div class="collapse navbar-collapse" id="navbarSupportedContent">-->
-<!--    <ul class="navbar-nav mr-auto">-->
-<!--      <li class="nav-item active">-->
-<!--        <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>-->
-<!--      </li>-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link" href="{% url 'register' %}">Register</a>-->
-<!--      </li>-->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'register' %}">Register</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'login' %}">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'Contact' %}">Contact us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/books">Books</a>
+      </li>
 <!--      <li class="nav-item">-->
 <!--        <a class="nav-link" href="{% url 'login' %}">Login</a>-->
 <!--      </li>-->
-<!--      <li class="nav-item">-->
-<!--        <a class="nav-link" href="{% url 'About' %}">About</a>-->
+
+<!--				<li class=""><a href="{% url 'Contact' %}">Contact us</a></li>-->
+<!--				<li class=""><a href="/home">Electronics</a></li>-->
+<!--				<li class=""><a href="/books">Books</a></li>-->
+      <li class="nav-item">
+        <a class="nav-link" href="{% url 'About' %}">About</a>
+      </li>
+<!--      <li class="nav-item dropdown">-->
+<!--        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">-->
+<!--          Dropdown-->
+<!--        </a>-->
+<!--        <div class="dropdown-menu" aria-labelledby="navbarDropdown">-->
+<!--          <a class="dropdown-item" href="#">Action</a>-->
+<!--          <a class="dropdown-item" href="#">Another action</a>-->
+<!--          <div class="dropdown-divider"></div>-->
+<!--          <a class="dropdown-item" href="#">Something else here</a>-->
+<!--        </div>-->
 <!--      </li>-->
-<!--&lt;!&ndash;      <li class="nav-item dropdown">&ndash;&gt;-->
-<!--&lt;!&ndash;        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&ndash;&gt;-->
-<!--&lt;!&ndash;          Dropdown&ndash;&gt;-->
-<!--&lt;!&ndash;        </a>&ndash;&gt;-->
-<!--&lt;!&ndash;        <div class="dropdown-menu" aria-labelledby="navbarDropdown">&ndash;&gt;-->
-<!--&lt;!&ndash;          <a class="dropdown-item" href="#">Action</a>&ndash;&gt;-->
-<!--&lt;!&ndash;          <a class="dropdown-item" href="#">Another action</a>&ndash;&gt;-->
-<!--&lt;!&ndash;          <div class="dropdown-divider"></div>&ndash;&gt;-->
-<!--&lt;!&ndash;          <a class="dropdown-item" href="#">Something else here</a>&ndash;&gt;-->
-<!--&lt;!&ndash;        </div>&ndash;&gt;-->
-<!--&lt;!&ndash;      </li>&ndash;&gt;-->
-<!--&lt;!&ndash;      <li class="nav-item">&ndash;&gt;-->
-<!--&lt;!&ndash;        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>&ndash;&gt;-->
-<!--&lt;!&ndash;      </li>&ndash;&gt;-->
-<!--    </ul>-->
+<!--      <li class="nav-item">-->
+<!--        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
+<!--      </li>-->
+    </ul>
 <!--    <form class="form-inline my-2 my-lg-0">-->
 <!--      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
 <!--      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
 <!--    </form>-->
-<!--  </div>-->
-<!--</nav>-->
-<!--</div>-->
+  </div>
+</nav>
+</div>
 
  {% load static %}
 
-  <header class="py-sm-3 pt-3 pb-2" >
-	<div class="container">
-			<div id="logo">
-				<h1> <a href="/home"></span> E-webgo</a></h1>
-			</div>
-		<!-- nav -->
-		<nav class="d-lg-flex">
+<!--  <header class="py-sm-3 pt-3 pb-2" >-->
+<!--	<div class="container">-->
+<!--			<div id="logo">-->
+<!--				<h1> <a href="/home"></span> E-webgo</a></h1>-->
+<!--			</div>-->
+<!--		&lt;!&ndash; nav &ndash;&gt;-->
+<!--		<nav class="d-lg-flex">-->
 
-			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>
-			<input type="checkbox" id="drop" />
-			<ul class="menu mt-2 ml-auto">
-				<li class="active"><a href="{% url 'index' %}">Home</a></li>
-				<li class=""><a href="{% url 'Contact' %}">Contact us</a></li>
-				<li class=""><a href="/home">Electronics</a></li>
-				<li class=""><a href="/books">Books</a></li>
-			</ul>
-				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+<!--			<label for="drop" class="toggle"><span class="fa fa-bars"></span></label>-->
+<!--			<input type="checkbox" id="drop" />-->
+<!--			<ul class="menu mt-2 ml-auto">-->
+<!--				<li class="active"><a href="{% url 'index' %}">Home</a></li>-->
+<!--				<li class=""><a href="{% url 'Contact' %}">Contact us</a></li>-->
+<!--				<li class=""><a href="/home">Electronics</a></li>-->
+<!--				<li class=""><a href="/books">Books</a></li>-->
+<!--			</ul>-->
+<!--&lt;!&ndash;				&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&ndash;&gt;-->
+<!--&lt;!&ndash;			<form class="form-inline my-2 my-lg-0">&ndash;&gt;-->
+<!--&lt;!&ndash;      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">&ndash;&gt;-->
+<!--&lt;!&ndash;      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>&ndash;&gt;-->
+<!--&lt;!&ndash;    </form>&ndash;&gt;-->
 
-		</nav>
-		<div class="clear"></div>
-		<!-- //nav -->
-	</div>
-</header>
-<!-- //header -->
+<!--		</nav>-->
+<!--		<div class="clear"></div>-->
+<!--		&lt;!&ndash; //nav &ndash;&gt;-->
+<!--	</div>-->
+<!--</header>-->
+<!--&lt;!&ndash; //header &ndash;&gt;-->
 
 <div>
 <!-- about --><br>
@@ -188,13 +201,13 @@
 					<div class="team-img">
 						<img src="static/images/par.jpg" alt="team member" class="img-fluid">
 					</div>
-					<div class="team-hover">
-						<div class="desk">
-							<h4>Parvej khan</h4>
-							<p>Full Stack developer.</p>
-						</div>
+<!--					<div class="team-hover">-->
+<!--						<div class="desk">-->
+<!--							<h4>Parvej khan</h4>-->
+<!--							<p>Full Stack developer.</p>-->
+<!--						</div>-->
 
-					</div>
+<!--					</div>-->
 				</div>
 				<div class="team-title">
 					<h5>Parvej khan</h5>
@@ -208,14 +221,14 @@
 					<div class="team-img">
 						<img src="static/images/anu.jpg" alt="team member" class="img-fluid">
 					</div>
-					<div class="team-hover">
-						<div class="desk">
-							<h4>Anurag Kushwaha</h4>
-							<p>Full Stack Developer.</p>
-							<p>+917985532371</p>
-							<p>anurag.cse016@gmail.com</p>
-						</div>
-					</div>
+<!--					<div class="team-hover">-->
+<!--						<div class="desk">-->
+<!--							<h4>Anurag Kushwaha</h4>-->
+<!--							<p>Full Stack Developer.</p>-->
+<!--							<p>+917985532371</p>-->
+<!--							<p >anurag.cse016@gmail.com</p>-->
+<!--						</div>-->
+<!--					</div>-->
 				</div>
 				<div class="team-title">
 					<h5>Anurag Kushawha</h5>
@@ -229,13 +242,13 @@
 					<div class="team-img">
 						<img src="static/images/sant.jpg" alt="team member" class="img-fluid">
 					</div>
-					<div class="team-hover">
-						<div class="desk">
-							<h4>Santosh Yadav</h4>
-							<p>Content Writer .</p>
-						</div>
+<!--					<div class="team-hover">-->
+<!--						<div class="desk">-->
+<!--							<h4>Santosh Yadav</h4>-->
+<!--							<p>Content Writer .</p>-->
+<!--						</div>-->
 
-					</div>
+<!--					</div>-->
 				</div>
 				<div class="team-title">
 					<h5>Santosh Yadav</h5>
