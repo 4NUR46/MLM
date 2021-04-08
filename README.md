@@ -1,7 +1,7 @@
 # Multilevel-Marketing
 This is an e-commerce web app using python's framework django. In this user can review and buy items and same an admin can add, delete and alter items details etc.
 
-# __________ Documentation for run project(Ewebgo) __________
+# ______ Documentation for run project(Ewebgo) ______
 
 ### Team members:-
 - 1. Anurag kushwaha
