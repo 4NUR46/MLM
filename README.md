@@ -21,6 +21,7 @@ Run following commands for installation.
 > cd myenv
 > git clone https://github.com/4NUR46/Multilevel-Marketing.git
 > Scripts\activate
+> cd Multilevel-Marketing
 > python -m pip install --upgrade django
 > python manage.py runserver
 ```
@@ -50,6 +51,9 @@ _____________________________________________________________________
 - For accessing admin pannel you can visit on **`localhost:8000\admin`** after running the server.
 - username : *`love`*
 - password : *`anu`*
+
+The above username and password will works only when you install https://github.com/4NUR46/Multilevel-Marketing.git repo.
+This will not works for my deployed project which is running on heroku.
 _____________________________________________________________________
 <!--
 - You can create new superuser by using cmd or going through that above link.
@@ -93,6 +97,13 @@ There are many things left to complete. Like Buy item, Get Notifiy, Add video le
 _____________________________________________________________________
 Thanks for visiting on this repository.
 Please give a star and support to my project if it is useful.
+_____________________________________________________________________
+# Contact info
+- Phone number : +917985532371 
+- Email id : anurag.cse016@gmail.com
+- or click on <a href="wa.me/917985532371"> Contact on Whatsapp </a>
+
+You can contact with me if any issue or want help regarding with this repo.
 _____________________________________________________________________
 
 <p align="center" > Developed with ❤ by Anurag Kushwaha
