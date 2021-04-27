@@ -1,6 +1,8 @@
 # Multilevel-Marketing
 This is an e-commerce web app using python's framework django. In this user can review and buy items and same an admin can add, delete and alter items details etc.
 
+# Project Link :  <a href='https://ewebgo.herokuapp.com/'> Ewebgo </a>
+
 # ______ Documentation for run project(Ewebgo) ______
 
 ### Team members:-
@@ -92,7 +94,7 @@ Thanks for visiting on this repository.
 Please give a star and support to my project if it is useful.
 _____________________________________________________________________
 
-<p align="center" > Developed by Love ❤ Anurag Kushwaha
+<p align="center" > Developed with ❤ by Anurag Kushwaha
 </p>
 <!---
 1.Download latest version of python 3.x series.
