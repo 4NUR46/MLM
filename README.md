@@ -20,8 +20,8 @@ Run following commands for installation.
 > python -m virtualenv myenv
 > cd myenv
 > git clone https://github.com/4NUR46/Multilevel-Marketing.git
-> python -m pip install --upgrade django
 > Scripts\activate
+> python -m pip install --upgrade django
 > python manage.py runserver
 ```
 ### Now open browser and search 
@@ -51,12 +51,13 @@ _____________________________________________________________________
 - username : *`love`*
 - password : *`anu`*
 _____________________________________________________________________
-
+<!--
 - You can create new superuser by using cmd or going through that above link.
 - For creating new superuser you can use the following command
 ```
 python manage.py createsuperuser
 ```
+--!>
 - Read given instruction prompt on shell/bash after running the above command and act accordingly.
 - Remember the password text will not be visible during creating the new superusername
 _____________________________________________________________________
