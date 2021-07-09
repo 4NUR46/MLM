@@ -1,11 +1,23 @@
+<!-- 
+Note : If you are reading this README.md file on any editor then I recommend to you to please read it on my github at https://github.com/4NUR46/MLM.git to understand easily.
+Because there are soo many things which will make you confuse to understanf it at any editor.
+-->
+
 _____________________________________________________________________
 _____________________________________________________________________
 # <p align="center" > ❤ Multilevel-Marketing ❤ </p>
 _____________________________________________________________________
 _____________________________________________________________________
 
-This is an e-commerce web app using django framework of python. In this user can review and buy items and same an admin can add, delete and alter items and their details etc.
+Summery : This is an e-commerce web app using django framework of python.
+In this there are three types of user.
+1. Unregistered users - Who can review only 
+2. Registered users - Who can review items, add items into cart check own profile after login.
+3. Admin - Who can add new items, edit items dtails, check profile, check who have order which item and delete the item etc.
+
 _____________________________________________________________________
+
+## <p align="center" > ❤ Documentation of using project(Ewebgo) ❤ </p>
 
 #### Project Homepage Link :  <a href='https://ewebgo.herokuapp.com/'> Ewebgo Home </a>
 The above link will took you at the homepage of my webapp which is running on heroku.
@@ -40,6 +52,7 @@ This link will open the django-admin page from where you can access all the data
 - 1. Anurag kushwaha
 - 2. Parvej khan
 - 3. Santosh yadav
+_____________________________________________________________________
 _____________________________________________________________________
 
 ## <p align="center" > ❤ Documentation for run project(Ewebgo) ❤ </p>
@@ -103,15 +116,18 @@ _____________________________________________________________________
 - For accessing admin pannel you can visit on **`localhost:8000\admin`** after running the server.
 - username : *`love`*
 - password : *`anu`*
-The above username and password will works only when you install https://github.com/4NUR46/Multilevel-Marketing.git repo.
-This will not works for my webapp project <a href='https://ewebgo.herokuapp.com/'> Ewebgo Home </a> which is running on heroku.
+
+The above username and password will works only when you install https://github.com/4NUR46/MLM.git repo on your syste and run.
+But this will not works for my webapp project <a href='https://ewebgo.herokuapp.com/'> Ewebgo Home </a> which is running on heroku.
 I have made that repository private for personal use and for security purpose of the visitors who have register at my webapp.
-The repository of that project is https://github.com/4NUR46/MLM.git which is private.
+The repository of that project is private.
 
 You can create new super user to access admin pannel.
 _____________________________________________________________________
 ### For hack the admin access.
+Note : This can be only use when you have full project file in your system.
 That is not a hack by the way, that is just a way to create a new super user to gain access of django-admin pannel.
+That above method is can be use when you forget you username or password.
 This can be only use when you have this full running project code.
 - You can create new superuser by using cmd or going through the terminal of pycharm where you have open this project.
 - For creating new superuser you can use the following command.
@@ -121,6 +137,15 @@ python manage.py createsuperuser
 - Read given instruction prompt on bash\shell after running the above command and act accordingly.
 - Remember the password text will not be visible during creating the new superusername.
 _____________________________________________________________________
+
+<!--
+### Simple Way to fix errors related to database tables or changes.
+Warning : This method can be only use when you are just getting errors in developing phase.
+In this way you can loose your all registered database tables of your project.
+In this just .... will tell after getting 10 stars on my repo.
+
+_____________________________________________________________________
+-->
 
 <!---
 ->J:\Final Project> python -m pip install --upgrade pip
@@ -145,7 +170,9 @@ Try your common sense to use above command. I already confused by which line I g
 <!--
 -->
 _____________________________________________________________________
-### <p align="center" >❤ To Do ❤</p> 
+
+## <p align="center" >❤ To Do ❤</p> 
+
 There are many things left to complete.
 - Like Buy item,
 - Add a Connect us page,
@@ -159,24 +186,44 @@ There are many things left to complete.
 - Enhance Features of video player,
 - Adding Screenshorts of program running etc.
 
-Currently I am trying for getting a job because of this I am unable to enhance these things in my projects.
-If you want to do any help you are welcome to enhance this project :)
-You can help me by connecting with me if you are getting any error or bad response from this project. I will feel happy to get help from you in my project correction.
+Currently I am trying for getting a job because of this I am unable to enhance these things in my projects.</br>
+If you want to do any help you are welcome to enhance this project :)</br>
+You can help me by connecting with me if you are getting any error or bad response from this project.</br>
+I will feel happy to get help from you in my project correction.
+
 _____________________________________________________________________
-### <p align="center" >❤ Thank You ❤</p> 
-Thanks for reading and visiting on this repository.
-Please give a star and support to my project if it is useful.
-Giving a star will not took anything from you but it will give a smile to me :)
-_____________________________________________________________________
-### <p align="center" > ❤ Contact info ❤ </p> 
-You can contact with me if any issue or want help regarding with this repository.
+
+## <p align="center" > ❤ Contact info ❤ </p> 
+
+You can contact with me if any issue or want help regarding with this repository. 
 - Phone number : +917985532371 
 - Email id : anurag.cse016@gmail.com
 - For Whatsapp : <a href="wa.me/917985532371"> Click here </a>
-
+_____________________________________________________________________
+---------------------------------------------------------------------
 _____________________________________________________________________
 
-# <p align="center" > Developed with ❤ by Anurag Kushwaha </p>
+## <p align="center" >❤ Thank You ❤ </p> 
+
+<p align="center">Thanks for reading and visiting on this repository.</br>
+Please give a star and support to my project if it is useful.</br>
+Giving a star will not took anything from you but it will give a smile to me :)</p>
+
+_____________________________________________________________________
+_____________________________________________________________________
+
+## <p align="center" > Developed with ❤ by Anurag Kushwaha </p>
+_____________________________________________________________________
+
+
+
+
+
+
+
+
+
+
 
 <!---
 1.Download latest version of python 3.x series.
